@@ -4,5 +4,6 @@ node_js:
 before_script:
   - phantomjs --version
   - npm install -g grunt-cli
-  - brower install
+  - npm install -g bower
+  - bower install
 script: npm test
