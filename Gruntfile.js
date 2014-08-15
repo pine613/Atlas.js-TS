@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       options: {
         reporter: 'spec'
       },
-      all: ['test/*/*.html']
+      all: ['test/**/*.html']
     },
     bower_concat: {
       test: {
