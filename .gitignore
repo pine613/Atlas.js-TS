@@ -3,5 +3,5 @@ node_modules
 
 .DS_Store
 
-AtlasTS.js
-AtlasTS.js.map
+/AtlasTS.js
+/AtlasTS.js.map
