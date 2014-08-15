@@ -1,6 +1,8 @@
 Atlas.ts
 ==========
 
+[![Build Status](https://travis-ci.org/pine613/Atlas.ts.svg?branch=master)](https://travis-ci.org/pine613/Atlas.ts)
+
 <img src="https://raw.github.com/steelydylan/Atlas.js/master/logo.png"></img>
 
 TypeScript Game Engine (Forked from [Atlas.js](https://github.com/steelydylan/Atlas.js))
