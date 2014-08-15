@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     },
     concat: {
       test: {
-        src: ['test/bower_vendor.js', 'node_modules/mocha/mocha.js'],
+        src: ['test/bower_vendor.js', 'node_modules/mocha-phantomjs/node_modules/mocha/mocha.js'],
         dest: 'test/vendor.js'
       }
     },
