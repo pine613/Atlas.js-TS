@@ -1,0 +1,19 @@
+{
+  "name": "Atlas.ts",
+  "version": "0.0.0",
+  "description": "Atlas.js\r ==========",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "expect": "~0.2.0",
+    "chai": "~1.9.0",
+    "jquery": "~2.1.*",
+    "chai-jquery": "~1.2.1"
+  }
+}
