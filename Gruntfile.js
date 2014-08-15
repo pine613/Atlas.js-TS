@@ -17,9 +17,13 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-      main: {
-        src: 'AtlasTS.js',
-        dest: 'AtlasTS.min.js'
+      AtlasJS: {
+        src: 'bin/Atlas.js',
+        dest: 'bin/Atlas.min.js'
+      },
+      AtlasTS: {
+        src: 'bin/AtlasTS.js',
+        dest: 'bin/AtlasTS.min.js'
       }
     },
     mocha_phantomjs: {
@@ -45,6 +49,16 @@ module.exports = function(grunt) {
         dest: 'test/vendor.js'
       }
     },
+    copy: {
+      AtlasJS: {
+        src: ['Atlas.js'],
+        dest: 'bin/'
+      },
+      AtlasTS: {
+        src: ['Atlas.js'],
+        dest: 'bin/'
+      }
+    },
     watch: {
       main: {
         files: ['*.ts'],
@@ -60,11 +74,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-typescript');
   grunt.loadNpmTasks('grunt-mocha-phantomjs');
   grunt.loadNpmTasks('grunt-bower-concat');
   
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', ['typescript', 'uglify']);
+  grunt.registerTask('build', ['typescript:main', 'copy', 'uglify']);
   grunt.registerTask('test', ['typescript', 'bower_concat', 'concat', 'mocha_phantomjs']);
 };
