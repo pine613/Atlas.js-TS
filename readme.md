@@ -73,4 +73,16 @@ Example
 - [JustEdit](http://jsdo.it/steelydylan/o5nG)
 
 
+## Build
 
+```
+$ npm install
+$ bower install
+$ grunt build
+```
+
+## Test
+
+```
+$ grunt test
+```
